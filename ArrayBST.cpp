@@ -95,21 +95,3 @@ bool ArrayBST::search(int data){
 	return false;
 }
 
-int main(){
-	ArrayBST a;
-	a.add(10);
-	a.add(5);
-	a.add(6);
-	a.add(8);
-	a.add(4);
-	a.add(3);
-
-	for(int i=0; i<MAX_SIZE;i++){
-		std::cout<<a.element[i]<<"\t";
-	}
-	std::cout<<std::endl;
-	std::cout<<a.search(9)<<"\t"<<a.search(8)<<std::endl;
-	std::cout<<"Minimum Data is:"<<" "<<a.min()<<std::endl;
-	std::cout<<"Maximum Data is:"<<" "<<a.max()<<std::endl;
-
-}
