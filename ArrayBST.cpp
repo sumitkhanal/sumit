@@ -9,6 +9,38 @@ ArrayBST::ArrayBST(){
 
 ArrayBST::~ArrayBST(){
 }
+int ArrayBST::getMin(){
+	int num=this->element[1];
+	for(int i=1;i<=MAX_SIZE;){
+		if(this->element[i]!=0){
+			if(this->element[i]<=num) num=this->element[i];
+			i=2*i;
+		}else{
+			break;
+		}
+	}
+	return num;
+}
+int ArrayBST::getMax(){
+	int num=this->element[1];
+	for(int i=1;i<=MAX_SIZE;){
+		if(this->element[i]!=0){
+			if(this->element[i]>=num) num=this->element[i];
+			i=2*i+1;
+		}else{
+			break;
+		}
+	}
+	return num;
+}
+
+int ArrayBST::max(){
+	return getMax();
+}
+int ArrayBST::min(){
+	return getMin();
+}
+
 
 void ArrayBST::add(int data){
 	//representing tree in array with first space empty
@@ -76,5 +108,8 @@ int main(){
 		std::cout<<a.element[i]<<"\t";
 	}
 	std::cout<<std::endl;
-	std::cout<<a.search(9)<<" "<<a.search(8);
+	std::cout<<a.search(9)<<"\t"<<a.search(8)<<std::endl;
+	std::cout<<"Minimum Data is:"<<" "<<a.min()<<std::endl;
+	std::cout<<"Maximum Data is:"<<" "<<a.max()<<std::endl;
+
 }

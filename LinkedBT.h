@@ -27,6 +27,7 @@ class LinkedBST:public BinarySearchTree{
     bool search(Node *&root,int targetKey);
     void add(Node *&subtree, Node *newNode);
     int min();
+    int max();
 };
 
 
@@ -48,6 +49,13 @@ bool LinkedBST::search(int data){}
 int LinkedBST::min(){
     while(root->left!=NULL){
         root=root->left;
+    }
+    return root->data;
+}
+
+int LinkedBST::max(){
+    while(root->right!=NULL){
+        root=root->right;
     }
     return root->data;
 }

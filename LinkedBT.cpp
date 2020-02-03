@@ -9,4 +9,5 @@ int main(){
     tree.preorderTraversal(tree.root);
     std::cout<<std::endl<<tree.search(tree.root,50)<<std::endl;
     std::cout<<tree.min()<<std::endl;
+    std::cout<<tree.max()<<std::endl;
 }
