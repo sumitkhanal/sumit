@@ -1,3 +1,4 @@
+#include<iostream>
 #include "BinaryTree.h"
 class Node{
 public:
@@ -25,6 +26,7 @@ class LinkedBST:public BinarySearchTree{
     bool search(int data);
     bool search(Node *&root,int targetKey);
     void add(Node *&subtree, Node *newNode);
+    int min();
 };
 
 
@@ -39,9 +41,16 @@ void LinkedBST::add(int data){
 }
 
 void LinkedBST::preorderTraversal(){}
+// int LinkedBST::min(){}
 
 bool LinkedBST::search(int data){}
 
+int LinkedBST::min(){
+    while(root->left!=NULL){
+        root=root->left;
+    }
+    return root->data;
+}
 
 void LinkedBST::add(Node *&root,int data){
     Node *newNode=new Node();
