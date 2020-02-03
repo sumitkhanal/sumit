@@ -5,7 +5,6 @@ ArrayBST::ArrayBST(){
 	for(int i=0;i<MAX_SIZE;i++){
 		this->element[i]=0;
 	}
-	std::cout<<"Hello World"<<std::endl;
 }
 
 ArrayBST::~ArrayBST(){
