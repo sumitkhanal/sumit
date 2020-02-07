@@ -1,7 +1,9 @@
-Name: Sumit Khanal;                                          
-Roll. No: 23;
-Work: Array implementation of Binary Search Tree.
+## Array and Linked List Implementation of Binary Tree
+Name: Sumit Khanal<br>                                       
+Roll. No: 23<br>
+Work: Array implementation of Binary Search Tree.<br>
+<br>
 
-Name: Ankit Khatiwada;
-Roll. No: 24;
-Work: Linked list implementation of Binary Search Tree.
+Name: Ankit Khatiwada;<br>
+Roll. No: 24;<br>
+Work: Linked list implementation of Binary Search Tree.<br>
