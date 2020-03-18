@@ -16,11 +16,16 @@ int main()
     {
         std::cout << a.element[i] << "\t";
     }
+    a.deleteData(8);
     std::cout << a.search(9) << "\t" << a.search(8) << std::endl;
     std::cout << "Minimum Data is:"
               << " " << a.min() << std::endl;
     std::cout << "Maximum Data is:"
               << " " << a.max() << std::endl;
+    for (int i = 0; i < MAX_SIZE; i++)
+    {
+        std::cout << a.element[i] << "\t";
+    }
 
     std::cout << "*************************************" << std::endl;
 
