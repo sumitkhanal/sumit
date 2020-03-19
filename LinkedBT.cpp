@@ -19,20 +19,22 @@ bool LinkedBST::search(int data) {}
 
 int LinkedBST::min()
 {
-    while (root->left != NULL)
+    Node *p=new Node();
+    while (p->left != NULL)
     {
-        root = root->left;
+        p = p->left;
     }
-    return root->data;
+    return p->data;
 }
 
 int LinkedBST::max()
 {
-    while (root->right != NULL)
+    Node *p=new Node();
+    while (p->right != NULL)
     {
-        root = root->right;
+        p = p->right;
     }
-    return root->data;
+    return p->data;
 }
 
 void LinkedBST::add(Node *&root, int data)
