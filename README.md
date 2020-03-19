@@ -2,9 +2,9 @@
 <br>
 
 ## Array and Linked List Implementation of Binary Tree
-Name: Sumit Khanal<br>                                       
-Roll. No: 23<br>
-Work: Array implementation of Binary Search Tree.<br>
+Name: Sumit Khanal <br>                                       
+Roll. No: 23 <br>
+Work: Array implementation of Binary Search Tree. <br>
 <br>
 
 Name: Ankit Khatiwada;<br>
